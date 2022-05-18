@@ -1,0 +1,16 @@
+.add-product-form {
+  margin: 0 auto;
+  width: 55%;
+  display: 'flex';
+  justify-content: 'center';
+  align-items: 'center';
+
+  @media (max-width: 1050px) {
+    width: 85%;
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}

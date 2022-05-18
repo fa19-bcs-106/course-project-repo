@@ -1,0 +1,42 @@
+/**
+  *Define colors for the farmer public profile
+*/
+:root {
+  --primary-green: #1e5b45;
+  --primary-red: #a6382e;
+  --primary-brown: #504024;
+
+  --secondary-gray: #f0f0f0;
+  --primary-black: #252627;
+
+  --shadow-gray: #f0f0f0;
+
+  /* borders */
+  --border-color: rgba(0, 0, 0, 0.1);
+  --border-wrapper: 1px solid var(--border-color);
+
+  /* Background color for sections*/
+  --section: #f9f9f9;
+
+  /* Modal overlay color*/
+  --modal-overlay: rgba(0, 0, 0, 0.9);
+}
+
+//layout themes
+.green-theme {
+  --header: var(--primary-green);
+  --text-header: var(--secondary-gray);
+  --text-body: var(--primary-black);
+}
+
+.red-theme {
+  --header: var(--primary-red);
+  --text-header: var(--secondary-gray);
+  --text-body: var(--primary-black);
+}
+
+.brown-theme {
+  --header: var(--primary-brown);
+  --text-header: var(--secondary-gray);
+  --text-body: var(--primary-black);
+}

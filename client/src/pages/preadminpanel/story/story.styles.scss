@@ -1,0 +1,199 @@
+@import '../../../scss/variables';
+
+.story {
+  // ======== HOW IT WORKS ===
+  padding-top: 15vh;
+
+  @media (max-width: 900px) {
+    padding-top: 10vh;
+  }
+
+  &__how-it-works {
+    height: 45vh;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 4vw;
+    color: #404040;
+
+    @media (max-width: 900px) {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+    }
+
+    &__left-container {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      background-repeat: no-repeat;
+      background-position: bottom right;
+      background-size: 20%;
+      @media (max-width: 900px) {
+        padding: 2vh;
+        width: 60vw;
+      }
+      @media (max-width: 900px) {
+        width: 75vw;
+      }
+
+      &__header {
+        font-size: $font-size__header__medium;
+        color: #1e5b45;
+        text-transform: uppercase;
+        @media (max-width: 1150px) {
+          font-size: $font-size__header__small;
+        }
+        @media (max-width: 900px) {
+          padding: 0;
+          text-align: center;
+          font-size: 1.6rem;
+        }
+      }
+
+      &__text-container {
+        margin-top: 3rem;
+        @media (max-width: 1150px) {
+          font-size: $font-size__small;
+        }
+        @media (max-width: 900px) {
+          padding: 0;
+          text-align: center;
+          margin-bottom: 4vh;
+        }
+
+        &__list-item {
+          display: flex;
+          align-items: center;
+          margin: 1vh 0;
+          &--icon {
+            font-size: 1.2rem;
+            margin-right: 2vh;
+          }
+          &--text {
+            text-align: left;
+          }
+        }
+      }
+    }
+
+    &__right-container {
+      width: 50vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @media (max-width: 900px) {
+        width: 100%;
+      }
+
+      &__img-container-top {
+        width: 15vw;
+        min-width: 13rem;
+        @media (max-width: 600px) {
+          min-width: 9rem;
+        }
+        &--img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 4px;
+        }
+      }
+
+      &__bottom-container {
+        display: flex;
+        &__img-container {
+          width: 15vw;
+          min-width: 13rem;
+          margin: 1vh;
+          @media (max-width: 600px) {
+            min-width: 8rem;
+          }
+          &--img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 4px;
+          }
+        }
+      }
+    }
+  }
+
+  // ======== CREATE YOUR PROFILE ===
+  &__create-your-profile {
+    height: 50vh;
+    padding: 0 4vw;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    background: #ffffff;
+    @media (max-width: 900px) {
+      font-size: 1.6rem;
+      flex-direction: column-reverse;
+      align-items: center;
+      padding: 0;
+      margin: 5rem 0;
+    }
+
+    &__img-container {
+      width: 50%;
+      transform: translate(0%, -20%);
+      @media (max-width: 900px) {
+        min-width: 50vw;
+        transform: translate(0%, 10%);
+        padding: 0;
+      }
+      &--img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+
+    &__description-container {
+      margin-top: 5rem;
+      margin-left: 5rem;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      color: #404040;
+      @media (max-width: 900px) {
+        width: 70vw;
+        padding: 0;
+        margin: 0;
+      }
+
+      &--header {
+        font-size: $font-size__header__medium;
+        font-weight: $font-weight__bold;
+        color: #1e5b45;
+        text-transform: uppercase;
+        margin: 1rem;
+        @media (max-width: 1150px) {
+          font-size: $font-size__header__small;
+        }
+        @media (max-width: 900px) {
+          text-align: center;
+        }
+      }
+
+      &--text {
+        margin: 1rem;
+        @media (max-width: 1150px) {
+          margin: 1vh 0;
+          font-size: $font-size__small;
+        }
+        @media (max-width: 900px) {
+          text-align: center;
+        }
+      }
+
+      &--button {
+        @media (max-width: 900px) {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

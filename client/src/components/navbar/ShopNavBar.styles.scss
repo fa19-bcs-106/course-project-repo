@@ -1,0 +1,141 @@
+// SHOPNAVBAR COMPONENT SCSS
+
+.shop__navbar__right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  svg {
+    font-size: 2rem;
+  }
+}
+.shop__navbar {
+  background-color: #ffffff;
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  align-items: center;
+  width: 100%;
+  z-index: 9000;
+  position: fixed;
+  @media (max-width: 700px) {
+    justify-content: space-evenly;
+  }
+
+  a {
+    // color: #1e5b45;
+    font-weight: 600;
+  }
+  &__logo {
+    margin-left: 5vw;
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #1e5b45;
+    //or
+    // color: #f7b53a;
+    transform: rotateZ(-9deg);
+    @media (max-width: 400px) {
+      margin-left: 0;
+    }
+  }
+  &__link {
+    display: flex;
+    justify-content: space-between;
+    // @media (max-width: 350px) {
+    //   display: none;
+    // }
+  }
+  &__account {
+    list-style: none;
+    width: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 5vw;
+    @media (max-width: 950px) {
+      width: 4rem;
+    }
+    @media (max-width: 400px) {
+      margin-right: 2vw;
+    }
+    .fa-shopping-cart,
+    .fa-user-circle {
+      cursor: pointer;
+      font-size: 1.3rem;
+      // color: #1e5b45;
+    }
+    .total-quantity {
+      color: #f75d37;
+      position: relative;
+      bottom: 0.8rem;
+      right: 1.5rem;
+      font-weight: bold;
+      @media (max-width: 950px) {
+        right: 0.7rem;
+      }
+    }
+    &__login {
+      cursor: pointer;
+      color: #1e5b45;
+      font-weight: bold;
+    }
+  }
+}
+
+.fixed {
+  opacity: 0.7;
+}
+
+.account-modal {
+  height: 10vh;
+  width: fit-content;
+  position: fixed;
+  top: 5vh;
+  right: 3.5vw;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+  z-index: 20000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  animation: drop-down 1s normal both;
+  @media (max-width: 800px) {
+    width: 30vw;
+  }
+  li {
+    list-style: none;
+    height: 3rem;
+  }
+  /* Drop-down animation */
+  @keyframes drop-down {
+    0% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 0;
+    }
+    100% {
+      top: 7vh;
+      opacity: 1;
+    }
+  }
+  @media (max-width: 550px) {
+    width: fit-content;
+  }
+}
+.account-overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: transparent;
+  z-index: 9999;
+}

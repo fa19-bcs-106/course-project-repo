@@ -1,0 +1,19 @@
+.public-profile {
+  &__wrapper {
+    margin-top: 7rem;
+    background-color: var(--white);
+    @media (max-width: 1050px) {
+      margin-top: 4.2rem;
+    }
+
+    /* Wrapper if the store is open */
+    &__store-open {
+      width: 90%;
+      margin: 0 auto;
+      box-shadow: 0 12px 16px -1px rgba(0, 0, 0, 0.3);
+      @media (max-width: 1050px) {
+        width: 100%;
+      }
+    }
+  }
+}

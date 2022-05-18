@@ -1,0 +1,93 @@
+.sign-up__animation {
+  width: 55%;
+  clip-path: polygon(14% 0, 100% 0, 100% 100%, 0% 100%);
+  background-image: url(/images/pattern2.png);
+  @media only screen and (max-width: 500px) {
+    width: 90vw;
+    height: 20vh;
+    clip-path: polygon(0 13%, 100% 0, 100% 100%, 0% 100%);
+  }
+}
+.sign-up__form-container {
+  width: 45%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .sign-up__form {
+    width: 80%;
+    .group {
+      margin: 2.5rem 0;
+    }
+    a {
+      text-align: center;
+      div {
+        margin-bottom: 2rem;
+      }
+    }
+    .alert-error {
+      height: 5rem;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+
+      h5 {
+        color: #d8000c;
+        font-weight: 300;
+        text-align: center;
+        font-size: 1rem;
+        // padding: 0.5rem 0;
+      }
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    width: 95%;
+    height: 80vh;
+
+    .sign-up__form {
+      width: 95%;
+      height: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      .title,
+      span {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .group {
+        margin: 2.5rem 0;
+      }
+      a {
+        text-align: center;
+        div {
+          margin-top: 2rem;
+        }
+      }
+      .alert-error {
+        height: 3rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        h5 {
+          color: #d8000c;
+          font-weight: 300;
+          text-align: center;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

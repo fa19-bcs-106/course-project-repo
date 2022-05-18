@@ -1,0 +1,9 @@
+.panel-profile__gallery {
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  @media (max-width: 1050px) {
+    flex-direction: column;
+  }
+}

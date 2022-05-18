@@ -1,0 +1,41 @@
+.farmer-public {
+  &__header {
+    height: 25rem;
+    position: relative;
+    @media (max-width: 750px) {
+      height: 15rem;
+    }
+
+    &__cover {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      @media (max-width: 1050px) {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+    }
+
+    &__avatar {
+      width: 12rem;
+      height: 12rem;
+      position: absolute;
+      left: 1.6rem;
+      top: 18.5rem;
+      box-shadow: 0 1px 2px 2px rgba(0, 0, 0, 0.3);
+      border-radius: 50%;
+      overflow: hidden;
+      z-index: 1;
+      @media (max-width: 750px) {
+        width: 6rem;
+        height: 6rem;
+        top: 11.8rem;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
